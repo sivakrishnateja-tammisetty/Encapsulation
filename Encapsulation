@@ -1,0 +1,33 @@
+ENCAPSULATION:process of binding data and functions under a single unit.
+
+          Data_members + member_functions => Encapsulation
+
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+class Base
+{
+    int x,y;
+    
+    public:
+    
+    void set_x(int x){this->x=x;}
+    void set_y(int y){this->y=y; }
+    int get_x(){return x;}
+    int get_y(){return y;}  
+};
+
+int main()
+{
+    Base obj;
+    obj.set_x(2);
+    obj.set_y(3);
+    cout<<"X value :"<<obj.get_x()<<endl;
+    cout<<"Y value :"<<obj.get_y()<<endl;
+    return 0;
+}
